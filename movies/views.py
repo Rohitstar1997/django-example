@@ -9,6 +9,7 @@ from .pagination import CustomPagination
 class get_delete_update_movie(RetrieveUpdateDestroyAPIView):
     serializer_class = MovieSerializer
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly,)
+    lookup_field = 'pk'
 
     def get_queryset(self, pk):
         try:
