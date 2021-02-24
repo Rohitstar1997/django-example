@@ -92,10 +92,11 @@ WSGI_APPLICATION = 'api_crud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'MOVIE',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'rohit1997',
-        'HOST': 'localhost',
+        'PASSWORD': 'Rohitstar',
+        'HOST': 'moviedb.cqxf6iyik57d.us-east-1.rds.amazonaws.com',
+        'PORT': 5432,
     }
 }
 """
